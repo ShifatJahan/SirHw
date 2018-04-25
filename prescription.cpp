@@ -12,6 +12,7 @@ void  First_display()
   }
   else{
    cout<<"continue as before";
+   cout<<"continue as before";
   }
 }
 int main()
