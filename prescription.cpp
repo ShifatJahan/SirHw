@@ -12,7 +12,6 @@ void  First_display()
   }
   else{
    cout<<"continue as before";
-   cout<<"continue as before";
   }
 }
 void  third_display()
