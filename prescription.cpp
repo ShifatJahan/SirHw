@@ -23,8 +23,7 @@ void  second_display()
     cout<<"If you sick please contact with doctor.\n";
   }
   else{
-   cout<<"die die die";
-
+ cout << "You will suffer in the long run.";
   }
 }
 void  third_display()
@@ -33,16 +32,36 @@ void  third_display()
   cin>>n;
   if(n==1)
   {
-    cout<<"It napa before and after dinner and breakfast.\n";
+    cout << "Change the formularity\n";
+        cout << "Take new Formular as:\n";
+        cout << "\t\t1.Sudfed\n";
+        cout << "\t\t2.DayQuil\n";
+        cout << "\t\t3.NyQuil\n";
+        cin >> n;
+        if(n == 1)
+        {
+            cout << "Take this medicine for  cold\n";
+        }
+        else if (n == 2)
+        {
+            cout << "DayQuil take 2 times\n";
+        }
+        else if (n == 3)
+        {
+            cout << "NyQuil take 3 times before eating breakfast, dinner and launch.\n";
+        }
   }
   else{
-   cout<<"die die die";
+   cout<<"Nothing";
 
   }
 }
 int main()
 {
-
+cout << "\t\t\t\tA prescribing medication story \n\n";
+    char ch;
+    do
+    {
   cout<<"Enter your option"<<endl;
   cout<<"\t\t1.Current Medication\n";
   cout<<"\t\t2.New Medication\n";
@@ -63,4 +82,9 @@ int main()
     third_display();
 
   }
+        cout << "\n\n\t\t\t\t\tDo you want to continue?" << endl;
+        cout << " Enter 'y' or 'n'\n";
+        cin >> ch;
+    }
+    while(ch != 'n');
 }
